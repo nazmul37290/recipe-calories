@@ -1,0 +1,12 @@
+th,
+td {
+  padding: 5px;
+}
+tbody {
+  counter-reset: section;
+}
+
+tbody tr td:first-child::before {
+  counter-increment: section;
+  content: counter(section);
+}

@@ -1,10 +1,10 @@
 import { CiClock2 } from "react-icons/ci";
 import { FaFire } from "react-icons/fa";
 import PropTypes from "prop-types";
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleWantToCook }) => {
   const {
     name,
-    recipe_id,
+
     image,
     short_description,
     ingredients,
@@ -25,8 +25,8 @@ const Recipe = ({ recipe }) => {
               Ingredients: {ingredients.length}
             </h5>
             <ul>
-              {ingredients.map((ingredient) => (
-                <li key={recipe_id} className="inline-block ">
+              {ingredients.map((ingredient, i) => (
+                <li key={i} className="inline-block ">
                   {ingredient}
                 </li>
               ))}
@@ -48,7 +48,10 @@ const Recipe = ({ recipe }) => {
           </div>
 
           <div className="card-actions justify-start">
-            <button className="btn bg-[#0BE58A] rounded-full">
+            <button
+              className="btn bg-[#0BE58A] rounded-full"
+              onClick={() => handleWantToCook(recipe)}
+            >
               Want to Cook
             </button>
           </div>
@@ -62,4 +65,5 @@ export default Recipe;
 
 Recipe.propTypes = {
   recipe: PropTypes.object,
+  handleWantToCook: PropTypes.func,
 };

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Recipe from "./recipe/Recipe";
 
-const Recipes = () => {
+const Recipes = ({ handleWantToCook }) => {
   const [recipes, setRecipes] = useState([]);
   useEffect(() => {
     fetch("recipe.json")
@@ -9,8 +9,12 @@ const Recipes = () => {
       .then((data) => setRecipes(data));
   }, []);
 
-  return recipes.map((recipe) => (
-    <Recipe key={recipe.recipe_id} recipe={recipe}></Recipe>
+  return recipes.map((recipe, i) => (
+    <Recipe
+      handleWantToCook={handleWantToCook}
+      key={i}
+      recipe={recipe}
+    ></Recipe>
   ));
 };
 

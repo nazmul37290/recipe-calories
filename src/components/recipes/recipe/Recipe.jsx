@@ -1,6 +1,7 @@
 import { CiClock2 } from "react-icons/ci";
 import { FaFire } from "react-icons/fa";
 import PropTypes from "prop-types";
+
 const Recipe = ({ recipe, handleWantToCook }) => {
   const {
     name,
@@ -12,8 +13,13 @@ const Recipe = ({ recipe, handleWantToCook }) => {
     calories,
   } = recipe;
   return (
-    <div className="my-10">
-      <div className="card w-96 bg-gray-100 min-h-max shadow-xl">
+    // <div>
+    //   {ingredients.map((ingredient) => (
+    //     <li>{ingredient}</li>
+    //   ))}
+    // </div>
+    <div className="my-10 ">
+      <div className="card w-96 bg-gray-100 shadow-xl">
         <figure className=" w-[336px] h-[172px] mt-6 mx-auto object-cover ">
           <img className="" src={image} />
         </figure>
@@ -24,9 +30,9 @@ const Recipe = ({ recipe, handleWantToCook }) => {
             <h5 className="text-lg font-bold">
               Ingredients: {ingredients.length}
             </h5>
-            <ul>
+            <ul className="list-disc list-inside">
               {ingredients.map((ingredient, i) => (
-                <li key={i} className="inline-block ">
+                <li key={i} className="">
                   {ingredient}
                 </li>
               ))}

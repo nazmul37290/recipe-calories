@@ -34,7 +34,7 @@ function App() {
         </p>
       </div>
       <div className="flex flex-col md:flex-row md:justify-around">
-        <div className="lg:w-2/3 grid grid-cols-1 lg:grid-cols-2">
+        <div className="lg:w-2/3 grid grid-cols-1 lg:grid-cols-2  h-auto">
           <Recipes handleWantToCook={handleWantToCook}></Recipes>
         </div>
         <div className="lg:w-1/3">

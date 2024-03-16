@@ -49,4 +49,6 @@ const WantToCook = ({ wantToCookList, handleCooking, cookingItems }) => {
 export default WantToCook;
 WantToCook.propTypes = {
   wantToCookList: PropTypes.array,
+  handleCooking: PropTypes.func,
+  cookingItems: PropTypes.array,
 };

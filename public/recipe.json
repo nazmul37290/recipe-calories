@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Chicken Avocado Salad",
+    "recipe_id": 1,
+    "image": "https://i.ibb.co/bLc5Jhf/avocado-salad.jpg",
+    "short_description": "A refreshing salad packed with protein and healthy fats.",
+    "ingredients": [
+      "2 cups cooked chicken breast, shredded",
+      "2 ripe avocados, diced",
+      "1 cup cherry tomatoes, halved",
+      "1/4 cup red onion, finely chopped",
+      "2 tablespoons cilantro, chopped",
+      "2 tablespoons lime juice",
+      "2 tablespoons olive oil",
+      "Salt and pepper to taste",
+      "Lettuce leaves for serving"
+    ],
+    "preparing_time_minutes": 15,
+    "calories": 350
+  },
+  {
+    "name": "Vegetable Stir-Fry",
+    "recipe_id": 2,
+    "image": "https://i.ibb.co/Wz9pt25/Vegetable-Stir-Fry.jpg",
+    "short_description": "A colorful and nutritious stir-fry loaded with fresh vegetables.",
+    "ingredients": [
+      "2 cups broccoli florets",
+      "1 red bell pepper, sliced",
+      "1 yellow bell pepper, sliced",
+      "1 cup snow peas",
+      "1 carrot, julienned",
+      "3 cloves garlic, minced",
+      "1 tablespoon ginger, minced",
+      "3 tablespoons soy sauce",
+      "1 tablespoon sesame oil",
+      "2 tablespoons vegetable oil",
+      "Cooked rice for serving"
+    ],
+    "preparing_time_minutes": 20,
+    "calories": 250
+  },
+  {
+    "name": "Quinoa Salad",
+    "recipe_id": 3,
+    "image": "https://i.ibb.co/kS7MVyC/Quinoa-Salad.jpg",
+    "short_description": "A protein-packed salad featuring quinoa, vegetables, and a zesty dressing.",
+    "ingredients": [
+      "1 cup quinoa, rinsed",
+      "2 cups water or vegetable broth",
+      "1 cup cucumber, diced",
+      "1 cup cherry tomatoes, halved",
+      "1/2 cup red onion, finely chopped",
+      "1/4 cup parsley, chopped",
+      "2 tablespoons lemon juice",
+      "2 tablespoons olive oil",
+      "Salt and pepper to taste"
+    ],
+    "preparing_time_minutes": 25,
+    "calories": 300
+  },
+  {
+    "name": "Mushroom Risotto",
+    "recipe_id": 4,
+    "image": "https://i.ibb.co/nMDfRMc/Mushroom-Risotto.jpg",
+    "short_description": "Creamy and flavorful risotto with earthy mushrooms.",
+    "ingredients": [
+      "1 1/2 cups Arborio rice",
+      "4 cups vegetable or chicken broth",
+      "2 tablespoons butter",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "8 ounces mushrooms, sliced",
+      "1/2 cup dry white wine",
+      "1/2 cup grated Parmesan cheese",
+      "Salt and pepper to taste"
+    ],
+    "preparing_time_minutes": 30,
+    "calories": 400
+  },
+  {
+    "name": "Spinach and Feta Stuffed Chicken Breast",
+    "recipe_id": 5,
+    "image": "https://i.ibb.co/9qpW007/chicken.jpg",
+    "short_description": "Juicy chicken breasts stuffed with spinach and creamy feta cheese.",
+    "ingredients": [
+      "4 boneless, skinless chicken breasts",
+      "2 cups fresh spinach leaves",
+      "1/2 cup crumbled feta cheese",
+      "2 cloves garlic, minced",
+      "1 tablespoon olive oil",
+      "Salt and pepper to taste",
+      "Toothpicks for securing"
+    ],
+    "preparing_time_minutes": 35,
+    "calories": 320
+  },
+  {
+    "name": "Chocolate Banana Smoothie",
+    "recipe_id": 6,
+    "image": "https://i.ibb.co/zQt5DWk/smoothie.jpg",
+    "short_description": "A decadent and creamy smoothie combining chocolate and banana flavors.",
+    "ingredients": [
+      "2 ripe bananas, frozen",
+      "1 cup milk (dairy or plant-based)",
+      "2 tablespoons cocoa powder",
+      "1 tablespoon honey or maple syrup",
+      "1/2 teaspoon vanilla extract",
+      "Ice cubes as needed"
+    ],
+    "preparing_time_minutes": 10,
+    "calories": 200
+  }
+]

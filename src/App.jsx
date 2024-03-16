@@ -6,10 +6,19 @@ import Header from "./components/header/Header";
 import Recipes from "./components/recipes/Recipes";
 
 function App() {
+  const [cookingItems, setCookingItems] = useState([]);
   const [recipes, setRecipes] = useState([]);
   const handleWantToCook = (recipe) => {
     const newListedRecipes = [...recipes, recipe];
     setRecipes(newListedRecipes);
+  };
+  const handleCooking = (removedRecipe) => {
+    const newWantToCookList = recipes.filter(
+      (recipe) => recipe !== removedRecipe
+    );
+    setRecipes(newWantToCookList);
+    const newCookingItems = [...cookingItems, removedRecipe];
+    setCookingItems(newCookingItems);
   };
 
   return (
@@ -29,7 +38,11 @@ function App() {
           <Recipes handleWantToCook={handleWantToCook}></Recipes>
         </div>
         <div className="lg:w-1/3">
-          <WantToCook wantToCookList={recipes}></WantToCook>
+          <WantToCook
+            wantToCookList={recipes}
+            handleCooking={handleCooking}
+            cookingItems={cookingItems}
+          ></WantToCook>
         </div>
       </div>
     </>

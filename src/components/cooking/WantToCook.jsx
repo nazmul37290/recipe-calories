@@ -1,6 +1,7 @@
+import Cooking from "./Cooking";
 import "./wantToCool.css";
 import PropTypes from "prop-types";
-const WantToCook = ({ wantToCookList }) => {
+const WantToCook = ({ wantToCookList, handleCooking, cookingItems }) => {
   return (
     <div>
       <div className="my-10 md:w-[450px] lg:w-auto  border-2 rounded-3xl p-10">
@@ -19,7 +20,6 @@ const WantToCook = ({ wantToCookList }) => {
           </thead>
           <tbody>
             {wantToCookList.map((recipe, i) => {
-              console.log(recipe);
               const { name, preparing_time_minutes, calories } = recipe;
               return (
                 <tr key={i}>
@@ -28,13 +28,19 @@ const WantToCook = ({ wantToCookList }) => {
                   <td>{preparing_time_minutes} minutes</td>
                   <td>{calories} calories</td>
                   <td>
-                    <button className="btn bg-[#0BE58A]">Preparing</button>
+                    <button
+                      className="btn bg-[#0BE58A]"
+                      onClick={() => handleCooking(recipe)}
+                    >
+                      Preparing
+                    </button>
                   </td>
                 </tr>
               );
             })}
           </tbody>
         </table>
+        <Cooking cookingItems={cookingItems}></Cooking>
       </div>
     </div>
   );
@@ -42,5 +48,5 @@ const WantToCook = ({ wantToCookList }) => {
 
 export default WantToCook;
 WantToCook.propTypes = {
-  wantToCookList: PropTypes.object,
+  wantToCookList: PropTypes.array,
 };

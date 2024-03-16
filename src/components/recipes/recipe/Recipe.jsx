@@ -19,7 +19,7 @@ const Recipe = ({ recipe, handleWantToCook }) => {
     //   ))}
     // </div>
     <div className="my-10 ">
-      <div className="card w-96 bg-gray-100 shadow-xl">
+      <div className="card w-96 h-[800px] bg-gray-100 shadow-xl">
         <figure className=" w-[336px] h-[172px] mt-6 mx-auto object-cover ">
           <img className="" src={image} />
         </figure>

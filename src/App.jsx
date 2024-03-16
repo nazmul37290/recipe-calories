@@ -4,11 +4,17 @@ import WantToCook from "./components/cooking/WantToCook";
 import Cover from "./components/cover/Cover";
 import Header from "./components/header/Header";
 import Recipes from "./components/recipes/Recipes";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [cookingItems, setCookingItems] = useState([]);
   const [recipes, setRecipes] = useState([]);
   const handleWantToCook = (recipe) => {
+    if (recipes.includes(recipe)) {
+      toast("Already added");
+      return;
+    }
     const newListedRecipes = [...recipes, recipe];
     setRecipes(newListedRecipes);
   };
@@ -23,6 +29,7 @@ function App() {
 
   return (
     <>
+      <ToastContainer></ToastContainer>
       <Header></Header>
       <Cover></Cover>
       <div className="mt-24">
@@ -34,10 +41,10 @@ function App() {
         </p>
       </div>
       <div className="flex flex-col md:flex-row md:justify-around">
-        <div className="lg:w-2/3 grid grid-cols-1 lg:grid-cols-2  h-auto">
+        <div className="lg:w-3/5 grid grid-cols-1 lg:grid-cols-2   h-auto">
           <Recipes handleWantToCook={handleWantToCook}></Recipes>
         </div>
-        <div className="lg:w-1/3">
+        <div className="lg:w-2/5">
           <WantToCook
             wantToCookList={recipes}
             handleCooking={handleCooking}

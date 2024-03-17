@@ -16,7 +16,7 @@ const Cover = () => {
           Explore Now
         </button>
         <button className="btn bg-transparent text-white text-sm md:text-lg rounded-full">
-          Our FeedBack
+          Our Feedback
         </button>
       </div>
     </div>

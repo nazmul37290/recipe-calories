@@ -19,7 +19,7 @@ const Cooking = ({ cookingItems }) => {
       <h1 className="text-2xl text-center p-4 font-bold border-b-2">
         Currently Cooking: {cookingItems.length}
       </h1>
-      <table className=" min-w-[400px] lg:w-full ">
+      <table className="w-auto md:min-w-[400px] lg:w-full ">
         <thead className="font-bold text-lg text-start lg:text-center">
           <tr className="">
             <th></th>
@@ -29,7 +29,7 @@ const Cooking = ({ cookingItems }) => {
           </tr>
         </thead>
 
-        <tbody className="text-sm lg:text-center px-4">
+        <tbody className="text-xs md:text-base lg:text-center px-4">
           {cookingItems.map((recipe, i) => {
             const { name, preparing_time_minutes, calories, recipe_id } =
               recipe;
@@ -39,17 +39,17 @@ const Cooking = ({ cookingItems }) => {
                 <tr className="bg-[#150B2B] bg-opacity-5 " key={recipe_id}>
                   <td className="font-semibold p-3">{i + 1}</td>
                   <td className="p-3">{name}</td>
-                  <td>{preparing_time_minutes} minutes</td>
-                  <td>{calories} calories</td>
+                  <td className="p-3">{preparing_time_minutes} minutes</td>
+                  <td className="p-3">{calories} calories</td>
                 </tr>
               </>
             );
           })}
-          <tr className="text-sm ">
+          <tr className="text-xs md:text-base ">
             <th></th>
             <th></th>
-            <td className="pt-4">Total Time= {cookingTime} minutes</td>
-            <td>Total Calories={totalCalories} calories</td>
+            <td className="p-2">Total Time= {cookingTime} minutes</td>
+            <td className="p-2">Total Calories={totalCalories} calories</td>
           </tr>
         </tbody>
       </table>

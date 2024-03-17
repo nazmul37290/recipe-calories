@@ -13,16 +13,11 @@ const Recipe = ({ recipe, handleWantToCook }) => {
     calories,
   } = recipe;
   return (
-    // <div>
-    //   {ingredients.map((ingredient) => (
-    //     <li>{ingredient}</li>
-    //   ))}
-    // </div>
     <div className="my-10 ">
-      <div className="card w-96 h-[800px] bg-gray-100 shadow-xl">
-        <figure className=" w-[336px] h-[172px] mt-6 mx-auto object-cover ">
-          <img className="" src={image} />
-        </figure>
+      <div className="card w-auto md:w-96 h-[850px] bg-gray-100 shadow-xl">
+        <div className="w-full lg:w-[336px] h-[220px] mt-6 mx-auto object-cover ">
+          <img className="w-full h-full rounded-3xl px-4 md:px-2" src={image} />
+        </div>
         <div className="p-6">
           <h2 className="card-title font-bold text-xl">{name}</h2>
           <p className="py-4">{short_description}</p>

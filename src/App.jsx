@@ -34,7 +34,7 @@ function App() {
       <Cover></Cover>
       <div className="mt-24">
         <h3 className="text-3xl  font-bold text-center">Our Recipes</h3>
-        <p className="text-center mt-4 mx-auto w-[600px]">
+        <p className="text-center mt-4 mx-auto w-auto md:w-[600px]">
           Welcome to our Recipes section, where culinary creativity meets
           mouthwatering flavors. Whether you&apos;re a seasoned chef or a novice
           cook, our collection of recipes offers something for everyone.

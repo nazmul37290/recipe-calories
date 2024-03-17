@@ -43,7 +43,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl lg:text-4xl font-bold">
+          <a className="btn btn-ghost text-xl md:text-4xl font-bold">
             Recipe Calories
           </a>
         </div>
@@ -65,7 +65,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end ">
-          <div className="flex hidden lg:block items-center bg-[#150B2B] bg-opacity-10 px-4 py-2 rounded-3xl mr-4">
+          <div className="hidden md:flex items-center bg-[#150B2B] bg-opacity-10 px-4 py-2 rounded-3xl mr-4">
             <CiSearch className="text-xl m-2" />
 
             <input

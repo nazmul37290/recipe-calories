@@ -12,10 +12,10 @@ const Cover = () => {
         goals.
       </p>
       <div className="flex justify-center gap-5">
-        <button className="btn bg-[#0BE58A] rounded-full text-sm text-lg">
+        <button className="btn bg-[#0BE58A] rounded-full text-sm md:text-lg">
           Explore Now
         </button>
-        <button className="btn bg-transparent text-white text-sm text-lg rounded-full">
+        <button className="btn bg-transparent text-white text-sm md:text-lg rounded-full">
           Our FeedBack
         </button>
       </div>

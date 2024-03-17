@@ -1,5 +1,5 @@
 import Cooking from "./Cooking";
-import "./wantToCool.css";
+
 import PropTypes from "prop-types";
 const WantToCook = ({ wantToCookList, handleCooking, cookingItems }) => {
   return (
@@ -23,7 +23,7 @@ const WantToCook = ({ wantToCookList, handleCooking, cookingItems }) => {
               const { name, preparing_time_minutes, calories } = recipe;
               return (
                 <tr key={i}>
-                  <td className="font-semibold p-2"></td>
+                  <td className="font-semibold p-2">{i + 1}</td>
                   <td>{name}</td>
                   <td>{preparing_time_minutes} minutes</td>
                   <td>{calories} calories</td>

@@ -29,15 +29,15 @@ const Cooking = ({ cookingItems }) => {
           </tr>
         </thead>
 
-        <tbody>
-          {cookingItems.map((recipe) => {
+        <tbody className="text-center">
+          {cookingItems.map((recipe, i) => {
             const { name, preparing_time_minutes, calories, recipe_id } =
               recipe;
 
             return (
               <>
                 <tr key={recipe_id}>
-                  <td className="font-semibold p-2"></td>
+                  <td className="font-semibold p-2">{i + 1}</td>
                   <td>{name}</td>
                   <td>{preparing_time_minutes} minutes</td>
                   <td>{calories} calories</td>

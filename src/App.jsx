@@ -40,8 +40,8 @@ function App() {
           cook, our collection of recipes offers something for everyone.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row md:justify-around">
-        <div className="lg:w-3/5 grid grid-cols-1 lg:grid-cols-2   h-auto">
+      <div className="flex flex-col gap-5 md:flex-row md:justify-around">
+        <div className="lg:w-3/5 grid grid-cols-1 lg:grid-cols-2 gap-5  h-auto">
           <Recipes handleWantToCook={handleWantToCook}></Recipes>
         </div>
         <div className="w-auto lg:w-2/5">

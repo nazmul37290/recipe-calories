@@ -14,9 +14,9 @@ const Recipe = ({ recipe, handleWantToCook }) => {
   } = recipe;
   return (
     <div className="my-10 ">
-      <div className="card w-auto md:w-96 h-[850px] bg-gray-100 shadow-xl">
-        <div className="w-full lg:w-[336px] h-[220px] mt-6 mx-auto object-cover ">
-          <img className="w-full h-full rounded-3xl px-4 md:px-2" src={image} />
+      <div className="card w-auto md:w-96 lg:w-auto  h-[850px] bg-gray-100 shadow-xl">
+        <div className="w-full lg:w-[300px] h-[220px] mt-6 mx-auto object-cover ">
+          <img className="w-full h-full rounded-3xl px-4 md:px-4" src={image} />
         </div>
         <div className="p-6">
           <h2 className="card-title font-bold text-xl">{name}</h2>

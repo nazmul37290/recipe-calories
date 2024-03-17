@@ -8,7 +8,9 @@ const Header = () => {
     <div className="">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
-          <a className="btn btn-ghost text-4xl font-bold">Recipe Calories</a>
+          <a className="btn btn-ghost text-xl lg:text-4xl font-bold">
+            Recipe Calories
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-lg">

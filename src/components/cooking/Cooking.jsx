@@ -23,32 +23,32 @@ const Cooking = ({ cookingItems }) => {
         <thead className="font-bold text-lg text-start lg:text-center">
           <tr className="">
             <th></th>
-            <td>Name</td>
+            <td className="p-3">Name</td>
             <td>Time</td>
             <td>calories</td>
           </tr>
         </thead>
 
-        <tbody className="text-center">
+        <tbody className="text-sm lg:text-center px-4">
           {cookingItems.map((recipe, i) => {
             const { name, preparing_time_minutes, calories, recipe_id } =
               recipe;
 
             return (
               <>
-                <tr key={recipe_id}>
-                  <td className="font-semibold p-2">{i + 1}</td>
-                  <td>{name}</td>
+                <tr className="bg-[#150B2B] bg-opacity-5 " key={recipe_id}>
+                  <td className="font-semibold p-3">{i + 1}</td>
+                  <td className="p-3">{name}</td>
                   <td>{preparing_time_minutes} minutes</td>
                   <td>{calories} calories</td>
                 </tr>
               </>
             );
           })}
-          <tr>
+          <tr className="text-sm ">
             <th></th>
             <th></th>
-            <td>Total Time= {cookingTime} minutes</td>
+            <td className="pt-4">Total Time= {cookingTime} minutes</td>
             <td>Total Calories={totalCalories} calories</td>
           </tr>
         </tbody>

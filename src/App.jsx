@@ -44,7 +44,7 @@ function App() {
         <div className="lg:w-3/5 grid grid-cols-1 lg:grid-cols-2   h-auto">
           <Recipes handleWantToCook={handleWantToCook}></Recipes>
         </div>
-        <div className="lg:w-2/5">
+        <div className="w-auto lg:w-2/5">
           <WantToCook
             wantToCookList={recipes}
             handleCooking={handleCooking}

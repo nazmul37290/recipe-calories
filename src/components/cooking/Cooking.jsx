@@ -45,7 +45,7 @@ const Cooking = ({ cookingItems }) => {
               </>
             );
           })}
-          <tr className="text-xs md:text-base ">
+          <tr className="text-xs md:text-base font-bold">
             <th></th>
             <th></th>
             <td className="p-2">Total Time= {cookingTime} minutes</td>
